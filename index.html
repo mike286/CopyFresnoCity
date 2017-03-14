@@ -6,8 +6,13 @@
             margin: 0;
             padding: 0;
         }
-        body,html {
+        body {
 
+        }
+        html {
+              background-color: #000;
+              background-image: 
+              background-repeat:repeat-x;
         }
         .container {
             position: relative;
@@ -84,7 +89,7 @@
             }
             .gallery {
                 height:280px;
-                background-image:url('./images/splash.jpg');
+                background-image:url("splash.jpg");
                 background-repeat:no-repeat;
             }
             .main-sidebar ul {
@@ -93,7 +98,9 @@
             .main-sidebar li {
                 
             }
-            
+            .main-sidebar ul li:last-child {
+                border-bottom-left-radius: 20px;
+            }
             .main-sidebar a {
                 color:#FFF;
                 display:block;
@@ -110,8 +117,38 @@
                 background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
             }
-            
-            
+            ul.social-icons, ul.bottom-links {
+                text-align: center;
+                list-style-type: none;
+            }
+            .social-icons li, .bottom-links {
+                display: inline-block;
+                margin: 0 5px;
+            }
+            ul.social-icons images {
+                width: 50px;
+            }
+            .bottom-links li {
+                        margin-top: 30px;
+            }
+            .bottom-links a {
+                color: #FFF;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            span.divider {
+                color: #FFF;
+                margin-left: 15px;
+            }
+            ul.main-subnav {
+                display: none;
+                position: absolute;
+                width: 150 px;
+                background-color: #000 !important;
+            }
+            .main-subnav li {
+                width: 100% !important;
+            }
     </style>
 
     <head>
@@ -119,30 +156,65 @@
             <header class="main-header">
                 
                     <ul>
-                        <li><a href="#"Link></a></li>
-                        <li><a href="#"Link></a></li>
-                        <li><a href="#"Link></a></li>
-                        <li><a href="#"Link></a></li>
-                        <li><a href="#"Link></a></li>
-                        <li><a href="#"Link></a></li>
-                        <li><a href="#"Link></a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
                     </ul>
                
             </header>
             <div class="main-content">
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li>Link
+                            <ul class="main-subnav">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                    </ul>
+                        </li>
+                        <li>Link
+                            <ul class="main-subnav">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                    </ul>
+                        </li>
+                        <li>Link
+                            <ul class="main-subnav">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li> 
+                    </ul>
+                        </li>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
                     </ul>
                 </nav>
+                
             <div class="gallery">
-                gallery
+                
             </div>
             <aside class="main-sidebar">
                 <ul class="side-nav">
@@ -158,7 +230,27 @@
             <div class="content-right">
                 content right 
             </div>
-            <footer class="main-footer">(c) created by Michael Alleyne</footer>
+            <footer class="main-footer">
+                <ul class="social-icons">
+                    <li><img src=".image/facebook.jpg" alt="facebook"></li>
+                    <li><img src=".image/facebook.jpg" alt="facebook"></li>
+                    <li><img src=".image/facebook.jpg" alt="facebook"></li>
+                    <li><img src=".image/facebook.jpg" alt="facebook"></li>
+                    <li><img src=".image/facebook.jpg" alt="facebook"></li>
+                    <li><img src=".image/facebook.jpg" alt="facebook"></li>
+                </ul>
+                <ul class="bottom-links">
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                    <li><a href="#">link1</a><span class="divider">|</span></li>
+                </ul>
+            </footer>
         </div>
+
             </body>
             </html>
